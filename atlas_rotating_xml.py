@@ -1,6 +1,6 @@
 import xml
 
 with open("allSprites_default.xml") as f:
-    data = xml.parsers.expat
+    data = xml.dom.minidom.parse(f)
 
 print(data)
